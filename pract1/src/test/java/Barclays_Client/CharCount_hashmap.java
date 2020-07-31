@@ -6,7 +6,8 @@ import java.util.Map;
 
 public class CharCount_hashmap {
 
-	public static void method(String str) {
+	public static void method(String str1) {
+		String str=str1.replaceAll("\\s", "");//to remove white spaces in between a string 
 		char[] strarray = str.toCharArray();
 		Map<Character, Integer> charmap = new LinkedHashMap<Character, Integer>();
 	//so that it follows insertion order	
@@ -34,7 +35,7 @@ public class CharCount_hashmap {
 		for (char c : j) {
 			System.out.println(c);
 		}
-		method("joydeep");
+		method("joydeep chowdhury");
 	}
 
 }
